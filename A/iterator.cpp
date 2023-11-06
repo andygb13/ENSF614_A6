@@ -90,9 +90,10 @@ T Vector<T>::VectIter::operator++(int i){
 
 template <class T>
 T Vector<T>::VectIter::operator--(){
-  index--;
-  if (index < 0){
-    index = v->size;
+  if (index == 0){
+    index = v->size-1;
+  } else {
+    index--;
   }
   return v->array[index];
 }
@@ -100,7 +101,7 @@ T Vector<T>::VectIter::operator--(){
 template <class T>
 T Vector<T>::VectIter::operator--(int i){
   if (i < 0){
-    i = v->size;
+    i = v->size-1;
   }
   return v->array[i];
 }
@@ -174,7 +175,7 @@ int main()
  // the code between the  #if 0 and #endif is ignored by
  // compiler. If you change it to #if 1, it will be compiled
  
-#if 0
+#if 1
 	cout << "\nTesting an <int> Vector: " << endl;
 	
 	cout << "\n\nTesting sort";
@@ -238,7 +239,7 @@ int main()
 		cout << endl << iterchar++;
 	
 #endif
-	cout << "\nPrgram Terminated Successfully." << endl;
+	cout << "\nProgram Terminated Successfully." << endl;
 	
 	return 0;
 }

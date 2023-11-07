@@ -1,4 +1,4 @@
-package B;
+package BC;
 
 import java.util.ArrayList;
 
@@ -40,5 +40,9 @@ public class MyVector<E extends Number & Comparable<E>>{
         for (int i=0; i<len; i++){
             System.out.print(storageM.get(i).getItem()+" ");
         }
+    }
+
+    public ArrayList<Item<E>> getItems() {
+        return storageM;
     }
 }

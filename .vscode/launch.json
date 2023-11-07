@@ -5,6 +5,13 @@
       "type": "java",
       "name": "DemoStrategyPattern",
       "request": "launch",
+      "mainClass": "BC.DemoStrategyPattern",
+      "projectName": "ENSF614_A6_74412a99"
+    },
+    {
+      "type": "java",
+      "name": "DemoStrategyPattern",
+      "request": "launch",
       "mainClass": "B.DemoStrategyPattern",
       "projectName": "ENSF614_A6_74412a99"
     },

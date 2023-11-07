@@ -1,4 +1,4 @@
-package B;
+package BC;
 /* ENSF 614 - Lab 6 Exercise C and D
  * M. Moussavi, October 2021
  * 
@@ -17,4 +17,8 @@ class Item <E extends Number & Comparable<E> >{
 	public E getItem(){
 		return item;
 	}
+
+	public int compareTo(Item<E> otherItem) {
+        return this.item.compareTo(otherItem.getItem());
+    }
 }

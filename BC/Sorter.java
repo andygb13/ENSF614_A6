@@ -1,4 +1,4 @@
-package B;
+package BC;
 
 public interface Sorter<E extends Number & Comparable<E>> {
 
